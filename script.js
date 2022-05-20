@@ -21,12 +21,12 @@ function ListaUtenti (data) {
                     <div class="card-text"><b>Suite: </b>${element.address.suite}</div>
                     <div class="card-text"><b>City: </b>${element.address.city}</div>
                     <div class="d-flex flex-row justify-content-end pt-3">
-                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#id${element.id}" aria-expanded="false" aria-controls="collapseExample">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#id${element.id}">
                             Dettagli
                         </button>
                     </div>
                     <div class="collapse" id="id${element.id}">
-                        <div class="pt-3">
+                        <div class="pt-3"> <!-- questo div è per evitare lo scattino alla chiusura -->
                             <div class="card-text"><b>Company: </b>${element.company.name}</div>
                             <div class="card-text"><b>Phone: </b>${element.company.phone}</div>
                             <div class="card-text"><b>Website: </b>${element.website}</div>
